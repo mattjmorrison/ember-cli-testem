@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-testem",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "Run tests using testem",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -9,7 +9,8 @@
   "scripts": {
     "start": "ember server",
     "build": "ember build",
-    "test": "ember test"
+    "test-all": "node tests/runner all",
+    "test": "node tests/runner"
   },
   "repository": "",
   "engines": {
@@ -17,6 +18,15 @@
   },
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "testem": "*",
+    "lodash-node": "^2.4.1",
+    "quick-temp": "0.1.2",
+    "rsvp": "*",
+    "fs-extra": "*",
+    "denodeify": "*",
+    "chalk": "*"
+  },
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",
     "broccoli-ember-hbs-template-compiler": "^1.6.1",
@@ -30,12 +40,17 @@
     "ember-data": "1.0.0-beta.12",
     "ember-export-application-global": "^1.0.0",
     "express": "^4.8.5",
-    "glob": "^4.0.5"
+    "glob": "^4.0.5",
+    "mocha": "^1.18.0",
+    "chai": "^1.9.1",
+    "through": "^2.3.4",
+    "configstore": "0.3.1",
+    "ember-cli-ncp": "1.0.2",
+    "walk-sync": "0.1.3",
+    "symlink-or-copy": "^1.0.0",
+    "mocha-jshint": "0.0.9"
   },
   "keywords": [
     "ember-addon"
-  ],
-  "ember-addon": {
-    "configPath": "tests/dummy/config"
-  }
+  ]
 }
