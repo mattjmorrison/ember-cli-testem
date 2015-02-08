@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-testem",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Run tests using testem",
   "directories": {
     "doc": "doc",
@@ -19,7 +19,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "testem": "*",
+    "testem": "^0.6.38",
     "lodash-node": "^2.4.1",
     "quick-temp": "0.1.2",
     "rsvp": "*",
